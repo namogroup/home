@@ -2,20 +2,23 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Josefin Sans', sans-serif;
+    overflow-x: hidden;
 }
 
 /*------------- NAVBAR ------------- */
 #navbar {
     height: 75px;
     width: 100%;
-    background-color: transparent;
+    background-color: #263344;
+    background-color: rgba(38,51,68,0.8);
     position: fixed;
+    z-index: 10;
 }
 #navbar.opaque {
     background-color: #263344;
     -webkit-box-shadow: 0 8px 6px -6px #999;
     -moz-box-shadow: 0 8px 6px -6px #999;
-    box-shadow: 0 8px 6px -4px #999;
+    box-shadow: 0 8px 6px -4px #999; 
 }
 #navbar .container {
     height: 100%;
@@ -32,27 +35,25 @@ body {
 #navbar .navigation a, #nav-phone {
     padding: 10px 20px;
     color: #C1C6CA;
-    font-size: 0.85em;
+    font-size: 0.9em;
     text-transform: uppercase;
     text-decoration: none;
-    transition: all 0.5s ease;
+    transition: all 0.4s ease;
 }
 #navbar .navigation a:hover {
-    color: #fff;
+    color: #FFF;
 }
 #navbar .navigation #nav-phone {
     border-left: 1px solid #C1C6CA;
+    font-size: 0.85em;
 }
 
-/*------------- SECTIONS ------------- */
+/*------------- SECTION DEFAULTS ------------- */
 .container {
-    width: 1200px;
-    margin: auto;
-}
-#splash {
-    width: 100%;
-    height: 700px;
-    background-color: #263344;
+    max-width: 1200px;
+    padding: 0 40px;
+    height: 100%;
+    margin: 0 auto;
 }
 .section {
     padding: 50px 0;
@@ -67,4 +68,42 @@ body {
 .bg-cream {
     background-color: #FAFAFA;
 }
-
+.bg-navy {
+    background-color: #111731;
+}
+/*------------- SPLASH ------------- */
+#splash {
+    width: 100%;
+    height: 750px;
+    background-color: #263344;
+    color: #fff;
+}
+#splash .container {
+    position: relative;
+    /* allows a gradient, but must remove actual image from html for this to work
+    background: linear-gradient(to right, #263344, transparent 75%),url("imgs/dots-map.svg");
+    background-repeat: no-repeat;
+    background-position: 75px 75px;  
+    */
+}
+ #splash img {
+    width: 100%;
+    opacity: 0.35; 
+    margin-top: 100px;   
+} 
+#splash #welcome {
+    width: 100%;
+    max-width: 500px;
+    position: absolute;
+    top: 0;
+    left: 10%;
+    margin-top: 200px;
+}
+#splash #welcome .header{
+    font-size: 4em;
+}
+#splash #welcome .subtext{
+    font-size: 2em;
+    margin: 0 0 0 60px;
+    color: #E5EAF0;
+}
