@@ -3,8 +3,8 @@ window.onscroll = function() {
     var splash = document.getElementById('splash');
     
     if ( window.pageYOffset > (splash.clientHeight - navbar.clientHeight)) {
-        navbar.classList.add("opaque");
+        navbar.classList.add("shadow");
     } else {
-        navbar.classList.remove("opaque");
+        navbar.classList.remove("shadow");
     }
 }
