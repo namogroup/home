@@ -61,7 +61,6 @@ body {
 /*------------- SPLASH ------------- */
 #splash {
     width: 100%;
-    height: 750px;
     background-color: #263344;
     color: #fff;
 }
@@ -76,15 +75,14 @@ body {
  #splash img {
     width: 100%;
     opacity: 0.35; 
-     margin-top: 100px;    
+    margin-top: 100px;    
 } 
 #splash #welcome {
     width: 100%;
     max-width: 500px;
     position: absolute;
-    top: 0;
+    top: 25%;
     left: 10%;
-    margin-top: 200px; 
 }
 #splash #welcome .header{
     font-size: 4em;
@@ -270,9 +268,6 @@ body {
     #navbar {
         visibility: hidden;
     }
-    #splash {
-        height: 555px;
-    }
     .section {
         padding: 100px 0;
     }
@@ -342,11 +337,28 @@ body {
     }
 }
 @media screen and (max-width: 670px) {
+    #splash #welcome {
+        text-align: center;
+        top: 25%;
+        left: 0;
+    }
+    #splash #welcome .header{
+        font-size: 3em;
+    }
+     #splash img {
+        margin: 20px 0;    
+    } 
     #ngsprices img {
         width: 90%;
         max-width: none;
     }
     .col-2-text-left img {
         width: 100%;
+    }
+    .description .header {
+        font-size: 2.0em !important;
+    }
+    #footer .container > div {
+        font-size: 0.9em;
     }
 }
