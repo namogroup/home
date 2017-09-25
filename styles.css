@@ -102,6 +102,9 @@ body {
 .section {
     padding: 150px 0;
 }
+.container p {
+    font-size: 1.1em;
+}
 .description p {
     color: grey;
 }
@@ -149,7 +152,7 @@ body {
 #services .label {
     font-size: 1.4em;
     font-weight: 600;
-    padding-bottom: 25px;
+    padding-bottom: 5px;
 }
 #services p {
     font-family: 'Source Sans Pro', sans-serif;
