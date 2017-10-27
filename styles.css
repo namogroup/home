@@ -130,6 +130,7 @@ body {
 #services .container > div {
     flex: 1 0 33%;
     text-align: center;
+    justify-content: top;
 }
 #services .container > div.header {
     flex: 0 0 100%;
@@ -189,6 +190,25 @@ body {
     transform: translateY(-50%);
     margin-left: -10px;
     max-height: 70%;
+}
+#shipping .description #btn-ngsprices {
+    display: block;
+    text-align: center;
+    width: 115px;
+    padding: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 0.75em;
+    font-weight: 600;
+    border-radius: 3px;
+    color: #0098EC;
+    background:  #E5EAF0;
+    box-shadow: 0 5px 20px 5px rgba(0,0,0,0.2);
+    margin-top: 20px;
+    transition: all 0.4s ease;
+}
+#shipping .description #btn-ngsprices:hover {
+    box-shadow: 0 0 5px 0 rgba(0,0,0,0.2);
 }
 
 /*------------- NGSPRICES ------------- */
